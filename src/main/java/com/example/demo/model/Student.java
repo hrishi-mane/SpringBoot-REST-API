@@ -14,6 +14,8 @@ public class Student {
     private String name;
     private String email_id;
     private LocalDate dob;
+
+    @Transient
     private Integer age;
 
     public Student(long id, String name, String email_id, LocalDate dob, Integer age) {
@@ -25,6 +27,26 @@ public class Student {
     }
 
     public Student() {
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail_id() {
+        return email_id;
+    }
+
+    public LocalDate getDob() {
+        return dob;
+    }
+
+    public Integer getAge() {
+        return age;
     }
 }
 
